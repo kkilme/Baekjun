@@ -1,0 +1,7 @@
+a=input()
+b=input()
+c=input()
+d=input()
+s=int(a)+int(b)+int(c)+int(d)
+print(int(s/60))
+print(s%60)
