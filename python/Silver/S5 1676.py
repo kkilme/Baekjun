@@ -8,4 +8,5 @@ for i in range(n):
     while k % 10 == 0:
         ans +=1
         k //= 10
+# 5, 25마다 +1해도 될듯?
 print(ans)
