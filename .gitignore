@@ -1,3 +1,5 @@
 .vscode/
 for test.py
 Baekjun.code-workspace
+*.prob
+*.bin
