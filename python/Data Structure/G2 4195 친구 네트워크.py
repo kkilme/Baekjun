@@ -1,3 +1,4 @@
+# Union-Find
 import sys
 
 n = int(input())
