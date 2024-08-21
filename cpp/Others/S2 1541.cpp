@@ -14,28 +14,30 @@ int main(){
 
     string s, cur;
     string num = "";
-    int sum = 0;
+    int sum = 0, temp=0;
     
     cin >> s;
 
     for(int i = s.length()-1; i>=0; i--){
         cur = s[i];
-        // cout << cur << " " << num << endl;
+        // cout << cur << " " << num << " " << sum << endl;
         if(cur.compare("-") == 0){
             reverse(num.begin(), num.end());
-            sum += stoi(num);
-            sum = -sum;
+            temp += stoi(num);
+            sum -= temp;
+            temp = 0;
             num = "";
 
         } else if (cur.compare("+") == 0){
             reverse(num.begin(), num.end());
-            sum += stoi(num);
+            temp += stoi(num);
             num = "";
         } else {
             num.append(cur);
         }
     }
-    if(num != "") {reverse(num.begin(), num.end()); sum += stoi(num);}
+    reverse(num.begin(), num.end());
+    sum += stoi(num) + temp;
 
     cout << sum;
 }
