@@ -1,4 +1,4 @@
-// 나는야 포켓몬 마스터 이다솜
+// 2024-09-05 비밀번호 찾기
 // hashmap
 #include <iostream>
 #include <map>
@@ -12,20 +12,18 @@ int main(){
     cin.tie(NULL);
     
     int n, m;
-    map<string, string> dogam;
-    string in;
+    map<string, string> memo;
+    string name, pass;
 
     cin >> n >> m;
 
     for(int i = 0; i < n; i++){
-        cin >> in;
-        dogam.insert({in, to_string(i+1)});
-        dogam.insert({to_string(i+1), in});
+        cin >> name >> pass;
+        memo.insert({name, pass});
     }
 
     for(int i = 0; i < m; i++){
-        cin >> in;
-
-        cout << dogam[in] << "\n";
+        cin >> name;
+        cout << memo[name] << "\n";
     }
 }
