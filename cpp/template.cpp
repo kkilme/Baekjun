@@ -8,5 +8,3 @@ int main(){
     cin.tie(NULL);
 
 }
-
-// sizeof(arr) / sizeof(arr[0]); 배열 길이 구하기

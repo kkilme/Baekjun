@@ -1,5 +1,5 @@
 // 2024-09-08 토마토
-// Graph
+// Graph - BST
 
 #include <iostream>
 #include <vector>
