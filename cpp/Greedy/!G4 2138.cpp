@@ -1,5 +1,6 @@
 // 2025-01-19 전구와 스위치
 // 그리디 알고리즘
+// 구현 아이디어를 못 떠올린 문제. 알고 나면 쉽다.
 #include <iostream>
 #include <string>
 using namespace std;
