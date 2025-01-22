@@ -1,3 +1,5 @@
+// 2025-01-22 좋다
+// 자료 구조? / 정렬 / 이분 탐색? / 투 포인터
 #include <iostream>
 #include <algorithm>
 
@@ -23,9 +25,9 @@ void solve(int a, int idx){
             break;
         }
         if(arr[l] + arr[r] < a){
-            r--;
-        }else{
             l++;
+        }else{
+            r--;
         }
     }
 }
@@ -44,4 +46,4 @@ int main(){
         solve(arr[i], i);
     }
     cout << answer;
-}  
+}
