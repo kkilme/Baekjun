@@ -1,4 +1,5 @@
 // 2025-02-13 벽 부수고 이동하기
+// 그래프 이론 / 그래프 탐색 / BFS
 #include <iostream>
 #include <string>
 #include <vector>
