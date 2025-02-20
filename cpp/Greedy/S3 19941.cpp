@@ -1,4 +1,5 @@
 // 2025-02-19 햄버거 분배
+// 그리디 알고리즘?
 #include <iostream>
 #include <string>
 #include <queue>
