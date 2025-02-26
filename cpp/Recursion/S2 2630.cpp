@@ -1,4 +1,5 @@
 // 2025-02-25 색종이 만들기
+// 분할 정복 / 재귀
 #include <iostream>
 #include <vector>
 using namespace std;
