@@ -1,4 +1,5 @@
 // 2025-03-03 진우의 달 여행 (Small)
+// DP / 브루트포스 알고리즘?
 #include <iostream>
 
 using namespace std;
