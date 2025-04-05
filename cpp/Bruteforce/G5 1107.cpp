@@ -28,13 +28,6 @@ int main(){
     int m;
     cin >> m;
     fill(nums, nums + 10, true);
-    if(m == 0){
-        cout << min((int)sn.size(), abs(n - 100));
-        return 0;
-    } else if (m == 10) {
-        cout << abs(n - 100);
-        return 0;
-    }
 
     for(int i = 0; i < m; i++){
         int a;
