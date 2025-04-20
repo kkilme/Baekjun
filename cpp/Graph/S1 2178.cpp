@@ -1,6 +1,5 @@
 // 2025-04-20 미로 탐색
-// 그래프 이론 / 그래프 탐색 / BFS?
-// 다익스트라로 품
+// 그래프 이론 / 그래프 탐색 / BFS
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,14 +20,14 @@ int main(){
         cin >> maze[i];
     }
 
-    priority_queue<pair<int, int>> q;
+    queue<pair<int, int>> q;
     
     q.push({0, 0});
     dist[0][0] = 1;
     while(!q.empty())
     {
-        int r = q.top().first;
-        int c = q.top().second;
+        int r = q.front().first;
+        int c = q.front().second;
 
         q.pop();
         for(auto d: dir){
