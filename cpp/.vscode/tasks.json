@@ -12,6 +12,7 @@
             "command": "g++",
             "args": [
                 "${file}",
+                "-std=c++17",
                 "-g",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
@@ -71,6 +72,7 @@
             "label": "C/C++: g++.exe 활성 파일 빌드",
             "command": "C:/mingw64/bin/g++.exe",
             "args": [
+                "-std=c++17", 
                 "-g",
                 "${file}",
                 "-o",
