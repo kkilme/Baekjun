@@ -1,6 +1,6 @@
 // 2025-05-23 플로이드
 // 그래프 이론 / 최단 경로 / 플로이드-워셜(의도)(O(n^3))
-// 다익스트라로 품;;(O(nmlogn))
+// 다익스트라로 품;;(이 문제에서 O(nmlogn))
 #include <bits/stdc++.h>
 using namespace std;
 
