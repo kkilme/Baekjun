@@ -2,8 +2,6 @@
 // 그래프 이론 / 최소 스패닝 트리
 #include <bits/stdc++.h>
 using namespace std;
-// Kruskal: O(ElogE)
-// Prim: O(V^2) or O(VlogV + ElogV) = O(ElogV)(인접 리스트 + 우선순위 큐 (힙) 사용 시, 모든 간선 E에 대해 힙에 넣는 시간 O(logV))
 int V, E;
 vector<pair<int, int>> g[10001];
 bool visited[10001];
