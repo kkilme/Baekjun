@@ -1,3 +1,23 @@
 // Kruskal: O(ElogE) 정렬 + Union-Find(사실상 O(1)에 근접)
 // Prim: O(V^2) or O(VlogV + ElogV) = O(ElogV)(인접 리스트 + 우선순위 큐 (힙) 사용 시, 모든 간선 E에 대해 힙에 넣는 시간 O(logV))
-// Dijkstra: O(V^2) or O(ElogV)(heap)
+
+// Dijkstra: O(V^2) or O(ElogV)(heap) 음의 가중치 존재 시 사용 불가
+
+// Bellman Ford 벨만 포드: O(VE)
+def bellman_ford(start):
+    weights[start] = 0
+    for i in range(V):
+        for src, dst, weight in graph:
+            W = weights[src] + weight
+            if weights[src] != INF and weights[dst] > W:
+                weights[dst] = W
+                if i == V -1:
+                    return False # negative cycle exists
+    return True # there is no cycle
+
+// Floyd Warshall 플로이드 워셜: O(V^3)
+for k in range(1, V+1): # via
+    graph[k][k] = 0 # 사이클 없으므로 자기 자신 0
+    for i in range(1, V+1): # src
+        for j in range(1, V+1): # dst
+            graph[i][j] = min(graph[i][j], graph[i][k]+graph[k][j])
