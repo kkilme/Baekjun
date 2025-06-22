@@ -19,7 +19,7 @@ def bellman_ford(start):
                     return False # negative cycle exists
     return True # there is no cycle
 
-// Floyd Warshall 플로이드 워셜: O(V^3)
+// Floyd Warshall 플로이드 워셜: O(V^3): 모든 정점에 대해 다른 정점까지의 최단거리 계산 시
 for k in range(1, V+1): # via
     graph[k][k] = 0 # 사이클 없으므로 자기 자신 0
     for i in range(1, V+1): # src
