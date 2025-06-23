@@ -7,11 +7,11 @@
 
 // Dijkstra: O(V^2) or O(ElogV)(heap) 음의 가중치 존재 시 사용 불가
 
-// Bellman Ford 벨만 포드: O(VE)
+// Bellman Ford 벨만 포드: O(VE) // 음의 가중치 존재 시, negative cycle 판별
 def bellman_ford(start):
     weights[start] = 0
-    for i in range(V):
-        for src, dst, weight in graph:
+    for i in range(V): // O(V)
+        for src, dst, weight in graph: // O(E)
             W = weights[src] + weight
             if weights[src] != INF and weights[dst] > W:
                 weights[dst] = W
