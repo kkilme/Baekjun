@@ -1,11 +1,39 @@
-// 최소 스패닝 트리 //////////////////////////////////////////////////////////////////////////
+// 최소 스패닝 트리 ////////////////////////////////////////////////////////////////////////////////
 // Kruskal: O(ElogE) 정렬 + Union-Find(사실상 O(1)에 근접)
-// Prim: O(V^2) or O(VlogV + ElogV) = O(ElogV)(인접 리스트 + 우선순위 큐 (힙) 사용 시, 모든 간선 E에 대해 힙에 넣는 시간 O(logV))
-//////////////////////////////////////////////////////////////////////////////////////////
+    DSU dsu(V);
+    ll total = 0;
+    int cnt = 0;
+    for(auto &e : edges){
+        if(dsu.unite(e.u, e.v)){
+            total += e.w;
+            cnt++;
+            if(cnt == V-1) break;
+        }
+    }
+
+// Prim: O(V^2) or O(VlogV + ElogV) = O((V+E)logV)(인접 리스트 + 우선순위 큐 (힙) 사용 시, 모든 간선 E에 대해 힙에 넣는 시간 O(logV))
+    for(auto p: g[1]) pq.push({p.second, p.first});
+    visited[1] = true;
+    while(!pq.empty()){
+        int nv = pq.top().second;
+        int w = pq.top().first;
+        pq.pop();
+
+        if(visited[nv]) continue;
+        visited[nv] = true;
+        ans += w;
+
+        for(auto p: g[nv]){
+            if(!visited[p.first]){
+                pq.push({p.second, p.first});
+            }
+        }
+    }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // 거리 계산 //////////////////////////////////////////////////////////////////////////////////////////
 
-// Dijkstra: O(V^2) or O(ElogV)(heap) 음의 가중치 존재 시 사용 불가
+// Dijkstra: O(V^2) or O((V+E)logV)(heap) 음의 가중치 존재 시 사용 불가
 
 // Bellman Ford 벨만 포드: O(VE) // 음의 가중치 존재 시, negative cycle 판별
 def bellman_ford(start):
