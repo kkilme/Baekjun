@@ -4,3 +4,8 @@ Baekjun.code-workspace
 *.prob
 *.bin
 cpp/test.cpp
+CSharp/Baekjun/obj/*
+CSharp/Baekjun/bin/*
+CSharp/Baekjun/.cphcsrun/*
+*.csproj
+*.sln
