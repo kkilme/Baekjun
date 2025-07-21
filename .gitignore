@@ -6,6 +6,6 @@ Baekjun.code-workspace
 cpp/test.cpp
 CSharp/Baekjun/obj/*
 CSharp/Baekjun/bin/*
-CSharp/Baekjun/.cphcsrun/*
+.cphcsrun
 *.csproj
 *.sln
