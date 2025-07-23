@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-class ProblemTemplate
+class P
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
     static StreamWriter sw = new StreamWriter(Console.OpenStandardOutput());
