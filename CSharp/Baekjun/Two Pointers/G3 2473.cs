@@ -2,7 +2,7 @@
 // 정렬 / 투 포인터 / 이분 탐색?
 class P2473
 {
-    static void Main()
+    static void _Main()
     {
         var sr = new StreamReader(Console.OpenStandardInput());
         int n = int.Parse(sr.ReadLine());
