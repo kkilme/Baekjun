@@ -9,7 +9,7 @@ class P
     static void _Main()
     {
         int T = int.Parse(sr.ReadLine());
-        for (int t = 0; t < T; t++)
+        for (int i = 0; i < T; i++)
         {
             string[] line = sr.ReadLine().Split();
         }
