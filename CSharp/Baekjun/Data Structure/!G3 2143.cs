@@ -4,7 +4,7 @@
 class P2143
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
-    static void Main()
+    static void _Main()
     {
         int T = int.Parse(sr.ReadLine());
         int n = int.Parse(sr.ReadLine());
