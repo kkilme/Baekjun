@@ -4,7 +4,7 @@ class P16637
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(sr.ReadLine());
         int m = (n - 1) / 2;

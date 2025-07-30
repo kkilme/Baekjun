@@ -8,10 +8,10 @@ class P
 
     static void _Main()
     {
-        int T = int.Parse(sr.ReadLine());
-        for (int i = 0; i < T; i++)
+        int n = int.Parse(sr.ReadLine());
+        for (int i = 0; i < n; i++)
         {
-            string[] line = sr.ReadLine().Split();
+            var line = sr.ReadLine().Split();
         }
 
         sw.Write(sb.ToString());
