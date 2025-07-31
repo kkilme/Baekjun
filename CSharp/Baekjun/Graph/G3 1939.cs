@@ -6,7 +6,7 @@ class P1939
     static int n, m, start, dest;
     static List<List<(int to, int d)>> gp = new();
 
-    static void Main()
+    static void _Main()
     {
         var line = sr.ReadLine().Split();
         n = int.Parse(line[0]);
