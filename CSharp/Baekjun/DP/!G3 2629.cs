@@ -4,7 +4,7 @@ class P2629
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(sr.ReadLine());
         int[] chus = sr.ReadLine().Split().Select(int.Parse).ToArray();
