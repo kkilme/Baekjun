@@ -5,7 +5,7 @@ class P2342
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         var line = sr.ReadLine().Split().Select(int.Parse).ToArray();
 

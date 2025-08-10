@@ -6,7 +6,7 @@ class P14725
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(sr.ReadLine());
         List<List<string>> l = new();
