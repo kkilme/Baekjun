@@ -4,7 +4,7 @@ class P1167
 {
     static StreamReader sr = new StreamReader(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(sr.ReadLine());
         List<(int v, int w)>[] gp = new List<(int v, int w)>[n + 1];
