@@ -2,9 +2,9 @@
 
 class P
 {
-    static StreamReader sr = new StreamReader(Console.OpenStandardInput());
-    static StreamWriter sw = new StreamWriter(Console.OpenStandardOutput());
-    static StringBuilder sb = new StringBuilder();
+    static StreamReader sr = new(Console.OpenStandardInput());
+    static StreamWriter sw = new(Console.OpenStandardOutput());
+    static StringBuilder sb = new();
 
     static void _Main()
     {

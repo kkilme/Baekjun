@@ -12,7 +12,7 @@ class P1918
         return 0;
     }
 
-    static void Main()
+    static void _Main()
     {
         string s = Console.ReadLine().Trim();
         var st = new Stack<char>(); // 스택엔 연산자와 (만 푸시됨
