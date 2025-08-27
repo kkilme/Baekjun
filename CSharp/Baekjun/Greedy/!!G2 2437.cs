@@ -3,7 +3,7 @@
 // 떠올리기 힘든 기발한 아이디어
 class P2437
 {
-    static void Main()
+    static void _Main()
     {
         Console.ReadLine();
         var line = Console.ReadLine().Split().Select(int.Parse).ToList();

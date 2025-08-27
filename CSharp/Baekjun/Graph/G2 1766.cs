@@ -7,7 +7,7 @@ class P1766
     static StreamReader sr = new(Console.OpenStandardInput());
     static StringBuilder sb = new();
 
-    static void Main()
+    static void _Main()
     {
         var l = sr.ReadLine().Split();
         int n = int.Parse(l[0]), m = int.Parse(l[1]);

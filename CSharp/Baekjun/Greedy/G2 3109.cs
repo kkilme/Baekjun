@@ -4,7 +4,7 @@ class P3109
 {
     static StreamReader sr = new(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         var rc = sr.ReadLine().Split();
         int r = int.Parse(rc[0]);
