@@ -5,7 +5,7 @@ class P1781
 {
     static StreamReader sr = new(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(sr.ReadLine());
         (int d, int c)[] problems = new (int d, int c)[n];
