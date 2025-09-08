@@ -4,7 +4,7 @@ class P2169
 {
     static StreamReader sr = new(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         var l = sr.ReadLine().Split();
         int n = int.Parse(l[0]), m = int.Parse(l[1]);

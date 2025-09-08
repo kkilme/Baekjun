@@ -4,7 +4,7 @@
 // 3x3 퍼즐로, 가능한 경우의 수가 9!이기 때문에 퍼즐의 상태를 string으로 만들어 원하는 배치가 될 때까지 bfs
 class P1525
 {
-    static void Main()
+    static void _Main()
     {
         string s = "";
         for (int i = 0; i < 3; i++)

@@ -2,7 +2,7 @@
 // 이분탐색 / LIS 문제
 class P2352
 {
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(Console.ReadLine());
         int[] ports = new int[n];
