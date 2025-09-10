@@ -4,7 +4,7 @@
 using System.Text;
 class P1256
 {
-    static void Main()
+    static void _Main()
     {
         var l = Console.ReadLine().Split().Select(int.Parse).ToArray();
         int n = l[0], m = l[1], k = l[2];
