@@ -2,7 +2,7 @@
 // 구현 / 문자열
 class P2941
 {
-    static void Main()
+    static void _Main()
     {
         var s = Console.ReadLine();
         int n = s.Length;
