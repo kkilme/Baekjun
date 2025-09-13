@@ -9,3 +9,4 @@ CSharp/Baekjun/bin/*
 .cphcsrun
 *.csproj
 *.sln
+**/obj
