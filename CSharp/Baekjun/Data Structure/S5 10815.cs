@@ -5,7 +5,7 @@ using System.Text;
 class P10815
 {
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(Console.ReadLine());
         int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
