@@ -2,7 +2,7 @@
 // 구현
 class P1475
 {
-    static void Main()
+    static void _Main()
     {
         string n = Console.ReadLine();
         int[] cnts = new int[10];
