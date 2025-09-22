@@ -4,7 +4,7 @@ using System.Text;
 
 class P17478
 {
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(Console.ReadLine());
 
