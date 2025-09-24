@@ -2,7 +2,7 @@
 // 정렬
 class P11004
 {
-    static void Main()
+    static void _Main()
     {
         int k = int.Parse(Console.ReadLine().Split()[1]);
         var a = Console.ReadLine().Split().Select(int.Parse).ToList();
