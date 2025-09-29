@@ -6,7 +6,7 @@ class P2740
 {
     static StreamReader sr = new(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         var l = sr.ReadLine().Split().Select(int.Parse).ToArray();
         int n = l[0], m = l[1];
