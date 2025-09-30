@@ -25,3 +25,7 @@ class P14916
         });
     }
 }
+/*
+int n=int.Parse(Console.ReadLine());
+Console.Write((n==1||n==3)?-1:(n%5)switch{0=>n/5,2=>n/5+1,3=>n/5+3,_=>n/5+2});
+*/
