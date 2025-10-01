@@ -1,4 +1,5 @@
 // 2025-09-30 카드1
+// 구현 / 자료구조 / 큐
 using System.Text;
 
 class P2161
