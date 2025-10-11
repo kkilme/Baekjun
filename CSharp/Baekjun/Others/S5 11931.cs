@@ -5,7 +5,7 @@ class P11931
 {
     static StreamReader sr = new(Console.OpenStandardInput());
 
-    static void Main()
+    static void _Main()
     {
         int n = int.Parse(sr.ReadLine());
         PriorityQueue<int, int> pq = new();
