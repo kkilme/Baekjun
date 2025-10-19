@@ -6,7 +6,7 @@
     {
         int n = int.Parse(sr.ReadLine());
 
-        var l = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        var l = sr.ReadLine().Split().Select(int.Parse).ToArray();
         int a = l[0], b = l[1];
 
         for (int i = 0; i < n; i++)
