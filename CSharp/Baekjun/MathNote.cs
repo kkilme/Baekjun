@@ -48,4 +48,23 @@ class MathNote
 
         return result;
     }
+
+    const long M = 1000000007;
+
+    // n번째 피보나치 수 구하기: fast doubling
+    // f(2k) = f(k) * (2f(k+1) - f(k))
+    // f(2k+1) = f(k+1)^2 + f(k)^2
+    // fibo(n) = FastDoublingFibo(n).Item1
+    public (long, long) FastDoublingFibo(long n)
+    {
+        if (n == 0) return (0, 1);
+        var (a, b) = FastDoublingFibo(n >> 1);// f(k)
+
+        long c = a * (((2 * b % M) - a + M) % M) % M; // f(2k) = f(n)
+        long d = ((a * a % M) + (b * b % M)) % M; // f(2k+1)
+
+        return n % 2 == 0 ? (c, d) : (d, (d + c) % M);
+        // n이 짝수: n = 2k => c, d 그대로 반환
+        // n이 홀수: n = 2k+1 => 우리가 원하는 건 f(2k+1), f(2k+2). c = f(2k), d = f(2k+1)이므로 d와 f(2k+2) = f(2k) + f(2k+1)를 반환
+    }
 }
